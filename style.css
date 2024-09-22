@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: "Electrolize", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    
+}
+.main{
+    height: 644px;
+    background-color: red;
+    position: relative;
+    background: url("/img/TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    
+    max-width: 60vw;
+    margin: auto;
+}
+.header-buttons{
+    display: flex;
+    column-gap: 5px;
+}
+.header-buttons button{
+    font-size: 20px;
+    padding: 8px 8px;
+    border-radius: 8px;
+    color: white;
+}
+.hero{
+    position: absolute;
+    bottom: 25px;
+    left: 23%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+    color: white;
+    font-weight: bold;
+}
+.hero-buttons button{
+    padding: 8px 24px;
+    font-size: 20px;
+    
+    
+    
+    
+}
+.hero-buttons input{
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: rgba(23, 23, 23, 0.7);
+    border-radius: 4px;
+    color: white;
+}
+.hero-buttons .btn{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}
+.hero-buttons input::placeholder{
+    font-size: 15px;
+    padding: 8px 8px;
+}
+.cizgi{
+    border: 3px solid rgb(54, 54, 54);
+    
+}
+.div-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    
+}
+.div-1 .left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin: 0px 20px;
+    max-width: 70vw;
+}
+.right{
+    position: relative;
+}
+.right img{
+    position: relative;
+    width: 555px;
+}
+.right video{
+    position: absolute;
+    top: 75px;
+    right: 60px;
+}
+.left h1{
+    font-size: 48px;
+    font-weight: bolder
+}
+.left p{
+    font-size: 24px;
+    margin-top: 15px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+}
+.box-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 15px;
+    padding: 15px 20px;
+    background-color: rgba(23, 23, 23,1 );
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.box-div{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.boxx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.box-1:hover{
+    transition: all 0.8s;
+    background-color: rgb(23, 23, 23);
+    color: red;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    padding: 25px 0;
+}
+.footer-center{
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-1 a{
+    color: white;
+    
+}
+.footer-top{
+    margin-bottom:20px ;
+}
+
+@media screen and (max-width:600px) {
+    .div-1 .right{
+        position: relative;
+    }
+    .div-1 .right img{
+        width: 180px;
+        
+
+    }
+    .div-1 .right video{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 150px;
+
+    }
+}
+@media screen and (max-width:460px) {
+    .div-1 h1{
+        font-size: 30px;
+
+    }
+    .div-1 p{
+        font-size: 20px;
+
+    }
+   
+   
+}
+@media screen and (max-width:385px) {
+    .main .header .header-buttons button{
+        font-size: 8px;
+    }
+    .main .hero .hero-buttons input{
+        font-size: 5px;
+    }
+    .main .hero .hero-buttons button{
+        font-size: 10px;
+    }
+    
+    
+    
+}
+@media screen and (max-width:285px) {
+    .div-1 h1{
+        font-size: 20px;
+    }
+    .div-1 p{
+        font-size: 10px;
+    }
+    .main .header .logo img{
+        width: 80px;
+    }
+    .main .hero h1{
+        font-size: 15px;
+    }
+    .main .hero span{
+        font-size: 10px;
+    }
+   .main{
+    position: relative;
+   }
+   .main .hero{
+    position: absolute;
+    left: 0;
+   }
+   .main .header .header-buttons button{
+    font-size: 5px;
+}
+.main .header .logo img{
+    width: 50px;
+}
+.main .hero .hero-buttons input{
+    display: none;
+}
+}
+@media screen and (max-width:180px) {
+    .div-1 h1{
+        font-size: 10px;
+    }
+    .div-1 p{
+        font-size: 5px;
+    }
+    .div-1 .right img{
+        display: none;
+    }
+    .div-1 .right video{
+        display: none;
+    }
+    .main .header .header-buttons button{
+        display: none;
+    }
+    .box .box-1 span{
+        font-size: 15px;
+    }
+    .box h2{
+        font-size: 20px;
+    }
+}
